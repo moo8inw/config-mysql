@@ -9,7 +9,7 @@ services:
       - 3306:3306
     volumes:
       - mysql_db_data_container:/var/lib/mysql
-      - config:/etc/mysql/conf.d
+      - /root/config-mysql/config:/etc/mysql/conf.d
   adminer_container:
     image: adminer:latest
     environment:
