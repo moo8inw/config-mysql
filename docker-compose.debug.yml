@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  config-mysql:
+    image: config-mysql
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3306
